@@ -88,6 +88,162 @@
   color: white;
 }
 
+.animation-keyframes {
+  position: relative;
+  top: 0px;
+  animation-name: slidein;
+  animation-duration: 7s;
+  // animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  color: white;
+}
+
+@keyframes slidein {
+  from {
+    position: relative;
+    top: 0px;
+    font-size: 50%;
+    margin-left: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    color: black;
+  }
+
+
+  50% {
+    position: relative;
+    top: -200px;
+    font-size: 200%;
+    margin-left: 25%;
+    width: 400px;
+    height: 400px;
+    background-color: mediumpurple;
+    color: white;
+  }
+
+  to {
+    position: relative;
+    top: 0px;
+    font-size: 100%;
+    margin-left: 0%;
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    color: white;
+  }
+}
+
+.flex-container {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+}
+.flex-box {
+  border: 5px gray solid;
+  margin: 10px;
+  padding: 10px;
+}
+.flex-box-1 {
+  background-color: yellow;
+}
+.flex-box-2 {
+  background-color: blue;
+  color: white;
+}
+.flex-box-3 {
+  background-color: red;
+  color: white;
+}
+
+.flex-container-display {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+}
+
+.flex-container-display-center {
+  justify-content: center;
+}
+
+.flex-container-display-right {
+  justify-content: end;
+}
+
+.flex-container-display-space-around {
+  justify-content: space-around;
+}
+
+.flex-container-display-space-between {
+  justify-content: space-between;
+}
+
+.flex-container-display-flex-start {
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.flex-container-display-align-center {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.flex-container-display > .flex-basis {
+  flex-basis: 100%;
+}
+
+.box123 {
+  width: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  body {
+    background-color: darkcyan;
+  }
+  .media-query-example {
+    background-color: red;
+    color: white;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  body {
+    background-color: grey;
+    color: white;
+  }
+  .media-query-example {
+    background-color: yellow;
+    color: black;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+  .media-query-example {
+    background-color: deeppink;
+    color: black;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: mediumpurple;
+    color: white;
+  }
+  .media-query-example {
+    background-color: pink;
+    color: black;
+  }
+}
+
+
 
 
 
