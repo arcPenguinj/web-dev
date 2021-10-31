@@ -1,8 +1,7 @@
 import PostItem from "./PostItem.js";
 import posts from "./post.json";
 
-const PostList = (
-    {}) => {
+const PostList = () => {
   return(
       <>
         {posts.map(post => {

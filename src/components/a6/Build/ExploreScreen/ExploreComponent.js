@@ -1,9 +1,7 @@
 import React from "react";
 import PostSummaryList from "../PostSummaryList/index.js";
 
-const ExploreComponent = (
-    {}
-) => {
+const ExploreComponent = () => {
   return(
       <>
           <div className="row">
@@ -16,28 +14,28 @@ const ExploreComponent = (
               </div>
             </div>
             <div className="col-2">
-              <a href="#" className="wd-padding-left"><i className="fas fa-cog fa-2x"></i></a>
+              <a href="/#" className="wd-padding-left"><i className="fas fa-cog fa-2x"></i></a>
             </div>
           </div>
           <ul className="nav mb-2 nav-tabs">
             <li className="nav-item">
-              <a className="nav-link active" href="#">For you</a>
+              <a className="nav-link active" href="/#">For you</a>
             </li>
           
             <li className="nav-item">
-              <a className="nav-link" href="#">Trending</a>
+              <a className="nav-link" href="/#">Trending</a>
             </li>
           
             <li className="nav-item">
-              <a className="nav-link" href="#">News</a>
+              <a className="nav-link" href="/#">News</a>
             </li>
           
             <li className="nav-item">
-              <a className="nav-link" href="#">Sports</a>
+              <a className="nav-link" href="/#">Sports</a>
             </li>
           
             <li className="nav-item">
-              <a className="nav-link" href="#">Entertainment</a>
+              <a className="nav-link" href="/#">Entertainment</a>
             </li>
           </ul>
           <div className="list-group">

@@ -2,11 +2,6 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "../ExploreScreen/explore.css";
 
-
-const getNavClass = (current, link) => {
-  return current === link ? 'wd-background-slight-dark-active' : 'wd-background-slight-dark';
-}
-
 const NavigationSidebar = (
     {
       current = 'explore'

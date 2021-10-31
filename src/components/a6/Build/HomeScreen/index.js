@@ -22,7 +22,7 @@ const HomeScreen = () => {
                 </div>
               </div>
               <div className="col-2">
-                <a href="#" className="wd-padding-left"><i className="fas fa-cog fa-2x"></i></a>
+                <a href="/#" className="wd-padding-left"><i className="fas fa-cog fa-2x"></i></a>
               </div>
             </div>
             <PostList/>

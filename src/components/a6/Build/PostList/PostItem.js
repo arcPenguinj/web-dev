@@ -43,7 +43,7 @@ const PostItem = (
       <div className="list-group-item wd-background-black wd-top-margin">
         <div className="row">
           <div className="col-1">
-            <img src={post.icon} className="wd-icon"/>
+            <img src={post.icon} className="wd-icon" alt={'icon'}/>
           </div>
           <div className="col-11">
             <div className="wd-padding-left">
@@ -55,7 +55,7 @@ const PostItem = (
             <div className="wd-main-content mb-2 wd-padding-left">
               {post.tweet}
             </div>
-            <img src={post.extra.image} className="wd-rounded-corners-pic"/>
+            <img src={post.extra.image} className="wd-rounded-corners-pic" alt={'image'}/>
             {extra}
             <div className="row wd-color-lightgray mt-2">
               <div className="col-3">
