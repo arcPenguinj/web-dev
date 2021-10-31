@@ -13,7 +13,7 @@ function App() {
   return (
       <BrowserRouter>
         <Route path="/a6/twitter/explore" component={ExploreScreen}/>
-        <Route path={["/a6/twitter/home", "/a6/twitter/"]} component={HomeScreen}/>
+        <Route path="/a6/twitter/home" component={HomeScreen}/>
         <div className="container">
           <Route path="/a6/hello" exact={true}>
             <HelloWorld/>
