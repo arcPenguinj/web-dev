@@ -2,8 +2,7 @@ import React from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 import who from "./who"
 
-const WhoToFollowList = (
-    {}) => {
+const WhoToFollowList = () => {
   return (
       <>
             <ul className={"list-group"}>

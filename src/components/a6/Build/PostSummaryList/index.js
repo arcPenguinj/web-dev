@@ -2,8 +2,7 @@ import React from "react";
 import posts from "./post.json";
 import PostSummaryItem from "./PostSummaryItem";
 
-const PostSummaryList = (
-    {}) => {
+const PostSummaryList = () => {
   return (
       <>
     {posts.map(post => {
