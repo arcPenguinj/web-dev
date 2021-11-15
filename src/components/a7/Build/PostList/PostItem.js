@@ -28,7 +28,7 @@ const PostItem = (
   };
 
   const deleteTweetClickHandler = () => {
-    dispatch({type: 'delete-tweet', tweet: post})
+    dispatch({type: 'delete-tweet', wtf: post})
   };
   let extra = <></>;
   if (post.extra.url != null) {

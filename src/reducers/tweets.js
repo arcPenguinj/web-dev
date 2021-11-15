@@ -21,7 +21,7 @@ const tweets = (state = posts, action) => {
 
     case 'delete-tweet':
       return state
-      .filter(tweet => tweet._id !== action.tweet._id);
+      .filter(tweet => tweet._id !== action.wtf._id);
 
 
     case 'create-tweet':
@@ -48,7 +48,7 @@ const tweets = (state = posts, action) => {
             ...state,
           ]
       );
-      
+
     default:
       return(state);
   }
