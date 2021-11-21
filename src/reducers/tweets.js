@@ -1,10 +1,13 @@
-import posts from '../components/a7/Build/data/tweets.json';
+import posts from '../components/a8/Build/data/tweets.json';
 
 const tweets = (state = posts, action) => {
   switch (action.type) {
+    case 'fetch-all-tweets':
+      return action.tweets;
+
     case 'like-tweet':
       return state.map(tweet => {
-        if(tweet._id === action.tweet._id) {
+        if(tweet._id === action.post._id) {
           if(tweet.liked) {
             tweet.liked = false;
             tweet.like--;
@@ -21,30 +24,12 @@ const tweets = (state = posts, action) => {
 
     case 'delete-tweet':
       return state
-      .filter(tweet => tweet._id !== action.wtf._id);
+      .filter(tweet => tweet._id !== action.post._id);
 
 
     case 'create-tweet':
-      const tweet = {
-        _id: (new Date()).getTime() + '',
-        // "topic": "Web Development",
-        "userName": "ReactJS",
-        // "verified": false,
-        "handle": "ReactJS",
-        "time": "2h",
-        "tweet": action.tweet,
-        "icon": "/images/elon.jpeg",
-        // "logo-image": "../../../images/react-blue.png",
-        "comment": 123,
-        "retweet": 234,
-        "like": 345,
-        "liked": false,
-        "extra": {
-          "image": "/images/starship.jpeg"
-        },
-      };
       return ([
-            tweet,
+            action.tweet,
             ...state,
           ]
       );
