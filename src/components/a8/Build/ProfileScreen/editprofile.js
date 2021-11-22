@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {saveProfile} from "../../../../services/profileServices";
 
 export const EditProfile = ({profile_date, onSave}) => {
   let [tempProfile, setTempProfile] = useState(profile_date);
   const dispatch = useDispatch();
-  const saveClickHandler = () => {
-    dispatch({type: 'save-profile', save: tempProfile});
+  const saveClickHandler = () =>{
+    // dispatch({type: 'save-profile', save: tempProfile});
+    saveProfile(dispatch, tempProfile);
     onSave();
   }
-
-
   return(
     <>
       <div className="wd-row">

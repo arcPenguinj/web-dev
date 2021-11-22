@@ -1,5 +1,6 @@
 const TWEET_API = 'https://node-tweeter.herokuapp.com/api/tweets';
 
+
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
     .then(response => response.json())
