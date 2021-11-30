@@ -1,0 +1,115 @@
+.wd-pointer {
+  cursor: pointer;
+}
+
+.wd-name-margin {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: inherit;
+}
+
+.wd-middle {
+  display: flex;
+  align-items: center;
+}
+
+.wd-profile-image{
+  position: relative;
+  top: -80px;
+}
+
+.wd-edit-profile-button {
+  float: right;
+}
+
+.wd-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wd-edit-profile-button {
+  float: right;
+  position: relative;
+  top: -50px;
+}
+
+.wd-profile-name {
+  font-size: x-large;
+  margin-top: -60px;
+  margin-left: 35px;
+}
+
+.wd-grey-names {
+  font-size: initial;
+  color: gray;
+}
+
+.wd-bio {
+  color: white;
+  font-size: 25px;
+}
+
+.wd-profile-other-info {
+  font-size: initial;
+  color: gray;
+  display: flex;
+}
+
+.wd-profile-other-element {
+  margin-right: 30px;
+  padding-right: 10px;
+}
+
+.wd-follow-and-followers {
+  display: flex;
+  color: white;
+}
+
+.wd-follow {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.wd-space {
+  margin-left: 5px;
+}
+
+.wd-save-profile-button {
+  float: right;
+  position: relative;
+}
+
+.wd-close-button{
+  cursor: pointer;
+  color: white;
+  font-size: x-large;
+  margin-right: 20px;
+}
+
+.wd-edit-profile-text {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: inherit;
+  flex:auto;
+}
+
+.wd-banner {
+  margin-top: 10px;
+}
+
+.wd-input-area {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.wd-input-typing-area{
+  background-color: transparent;
+  border:none;
+  color: white;
+}

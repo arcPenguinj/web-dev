@@ -3,9 +3,11 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import {Link} from "react-router-dom";
+import PracticeA9 from "./components/a9/Practice";
 import PracticeA8 from "./components/a8/Practice";
 import PracticeA7 from "./components/a7/Practice";
 import PracticeA6 from "./components/a6/Practice";
+import BuildA9 from "./components/a9/Build";
 import BuildA8 from "./components/a8/Build";
 import BuildA7 from "./components/a7/Build";
 import BuildA6 from "./components/a6/Build";
@@ -18,7 +20,10 @@ function App() {
   return (
       <BrowserRouter>
         <div className="container">
-          <Route path={["", "/a8", "/a8/practice"]} exact={true}>
+          <Route path={["", "/a9", "/a9/practice"]} exact={true}>
+            <PracticeA9/>
+          </Route>
+          <Route path={["/a8", "/a8/practice"]} exact={true}>
             <PracticeA8/>
           </Route>
           <Route path={["/a7", "/a7/practice"]} exact={true}>
@@ -29,6 +34,9 @@ function App() {
           </Route>
           <Route path={["/a6/hello"]} exact={true}>
             <HelloWorld/>
+          </Route>
+          <Route path="/a9/twitter/*">
+            <BuildA9/>
           </Route>
           <Route path="/a8/twitter/*">
             <BuildA8/>
@@ -50,6 +58,9 @@ function App() {
           </Link> |
           <Link to="/a8">
             A8
+          </Link>|
+          <Link to="/a9">
+            A9
           </Link>
         </div>
       </BrowserRouter>
