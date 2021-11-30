@@ -1,16 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import ReduxExamples from "./ReduxExamples/components";
-import APIExamples from "./APIExamples";
+import Movies from "./movies";
 
-
+    
 const Practice = () => {
   return(
       <div>
         <h1>Practice</h1>
         <Link to="/a9/twitter/home">Twitter</Link>
-        <APIExamples/>
-        <ReduxExamples/>
+        <Movies/>
       </div>
   )
 };
