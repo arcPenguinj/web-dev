@@ -31,10 +31,13 @@ export const updateMovie = (movie) =>
     }
   }).then(response => response.json());
 
-export default {
+const movieApi = {
   findAllMovies,
   deleteMovie,
   createMovie,
   findMovieById,
   updateMovie,
 };
+
+export default movieApi;
+
